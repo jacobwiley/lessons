@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/grid.css">
+
+    <style>
+        * {
+            /* outline: 1px solid silver; */
+            box-sizing: border-box;
+            color: transparent;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        div.gallery {
+            /* background: red; */
+            /* margin: 5px; */
+            display: flex;
+            flex: 1;
+        }
+
+        div.gallery article {
+            flex: 3;
+            background: cornflowerblue;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        div.gallery aside {
+            flex: 1;
+            /* background: royalblue; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.gallery aside div {
+            flex: 1;
+            /* padding-bottom: 30%; */
+            background: cornflowerblue;
+            margin: 5px;
+            border-radius: 5px;
+
+        }
+
+        div.gallery aside section {
+            flex: 2;
+            background: royalblue;
+            /* padding-bottom: 100%; */
+            margin: 5px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="gallery">
+            <article>a</article>
+            <aside>
+                <div>a</div>
+                <section>a</section>
+            </aside>
+        </div>
+
+        <div class="gallery">
+
+            <aside>
+                <section>a</section>
+                <div>a</div>
+            </aside>
+
+            <article>a</article>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
