@@ -2,16 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>one column</title>
-  <link rel="stylesheet" href="one_columns.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/grid.css">
+
+    <style>
+        main {
+            display: flex;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        main article {
+            flex: 1;
+            background-color: cornflowerblue;
+            margin: 5px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="flex-container">
-    <div class="flex-item">Column</div>
-  </div>
+
+    <main>
+        <article></article>
+    </main>
+
 </body>
 
 </html>
