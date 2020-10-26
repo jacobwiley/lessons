@@ -1,1 +1,40 @@
-two_rows
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Rows</title>
+
+    <link rel="stylesheet" href="css/grid.css">
+
+    <style>
+        main {
+            display: flex;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 5px;
+            flex-direction: column; /*Actually rows*/
+        }
+
+        main article {
+            flex: 1;
+            background-color: cornflowerblue;
+            margin: 5px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <article>one</article>
+        <article>two</article>
+    
+    </main>
+
+</body>
+
+</html>
